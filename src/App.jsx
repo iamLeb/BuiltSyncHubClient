@@ -15,6 +15,7 @@ import Login from "./views/authentication/Login.jsx";
 import {UserContextProvider} from "./context/userContext.jsx";
 import Index from "./views/dashboard/Index.jsx";
 import Profile from "./views/dashboard/Profile.jsx";
+import InternshipApplication from "./views/dashboard/application/InternshipApplication.jsx";
 
 function App() {
     axios.defaults.baseURL = "http://localhost:3000";
@@ -35,6 +36,7 @@ function App() {
                   <Route path="/secure" element={<Dashboard />}>
                       <Route path="" element={<Index />}/>
                       <Route path="profile" element={<Profile />}/>
+                      <Route path="application" element={<InternshipApplication />}/>
                   </Route>
 
                   <Route path="*" element={<NotFound />}/>
