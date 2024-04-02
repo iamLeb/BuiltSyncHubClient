@@ -140,6 +140,7 @@ const Register = () => {
             toast.success('Registration Successful');
             navigate('/auth/login');
         } else {
+            console.log(message)
             toast.error("Something went wrong, ", message);
         }
     }

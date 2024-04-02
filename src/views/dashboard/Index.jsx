@@ -4,7 +4,7 @@ const Index = () => {
     const {user} = useContext(UserContext);
     return (
         <div>
-            Welcome {!! user && user.name }
+            Welcome {!! user && user.name}
         </div>
     );
 };
